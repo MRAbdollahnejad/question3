@@ -4,5 +4,5 @@ public class Lesson {
     private String name;
     private int id;
     private Master master;
-    
+    private Students[] students;
 }
