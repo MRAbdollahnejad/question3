@@ -2,7 +2,7 @@ package maktab_question_three;
 
 import java.util.Arrays;
 
-public class Master {
+public class Student {
     private String name;
     private int id;
     private int numberOfLessons;
@@ -12,9 +12,7 @@ public class Master {
         return numberOfLessons;
     }
 
-
-
-    public Master(String name, int id, int numberOfLessons) {
+    public Student(String name, int id, int numberOfLessons) {
         this.name = name;
         this.id = id;
         this.numberOfLessons = numberOfLessons;
@@ -24,22 +22,9 @@ public class Master {
         this.lessonsString = lessonsString;
     }
 
-    public Lesson[] getLessonsString() {
-        return lessonsString;
-    }
-
-//    @Override
-//    public String toString() {
-//        return "Master{" +
-//                "name='" + name + '\'' +
-//                ", id=" + id +
-//                ", lessons=" + Arrays.toString(lessonsString) +
-//                '}';
-//    }
-
     @Override
     public String toString() {
-        return "Master{" +
+        return "Student{" +
                 "name='" + name + '\'' +
                 ", id=" + id +
                 ", numberOfLessons=" + numberOfLessons +
