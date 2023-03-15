@@ -28,24 +28,25 @@ public class UniversityApplication {
 
         master1.setLessonsString(master1Lessons);
 //        System.out.println(master1);
-
-        System.out.println(Arrays.toString(master2Lessons[0].getStudents()));
-        System.out.println(Arrays.toString(master1Lessons[0].getStudents()));
-        System.out.println(Arrays.toString(master1Lessons[1].getStudents()));
-
         master2.setLessonsString(master2Lessons);
 //        System.out.println(master2);
-
 
         Lesson[] lessons1 = new Lesson[student1.getNumberOfLessons()];
         lessons1[0] = master1Lessons[0];
         lessons1[1] = master1Lessons[1];
 
+        Lesson[] lessons2 = new Lesson[student2.getNumberOfLessons()];
+        lessons2[0] = master2Lessons[0];
+
         student1.setLessonsString(lessons1);
 //        System.out.println(student1);
 
+        System.out.println(Arrays.toString(master2Lessons[0].getStudents()));
+        System.out.println(Arrays.toString(master1Lessons[0].getStudents()));
+        System.out.println(Arrays.toString(master1Lessons[1].getStudents()));
 
-
-
+        System.out.println(lessons1[0].getMaster());
+        System.out.println(lessons1[1].getMaster());
+        System.out.println(lessons2[0].getMaster());
     }
 }

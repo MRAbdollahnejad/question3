@@ -17,6 +17,10 @@ public class Lesson {
         return students;
     }
 
+    public Master getMaster() {
+        return master;
+    }
+
     @Override
     public String toString() {
         return "Lesson{" +
